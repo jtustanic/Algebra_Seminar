@@ -56,20 +56,12 @@ class Chat extends React.Component {
     });
   }
 
-  toggleSidebar = () =>{
-    this.sidebar.ToggleSidebar();
-  }
+
 
   render(){
     return (
       <div className="App">
-      <div className="App-header">
-        <button className='sidebar-btn' onClick={this.toggleSidebar}>Sidebar</button>
-        <h1>{this.props.username}'s Chat Room</h1>
-        {/* Prazan div služi za flex pozicioniranje elemenata */}
-        <div></div>
-      </div>
-      <Sidebar ref={(reference)=> this.sidebar = reference}/>
+     
       <Messages
         messages={this.state.messages}
         currentMember={this.state.member}
