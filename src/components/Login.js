@@ -15,7 +15,7 @@ const Login = (props) => {
     return (
     <div className="container">
         <form className="login-form" onSubmit={handleSubmit}>
-            <lable for="title">
+            <lable htmlFor="title">
                 <h1>Login</h1>
             </lable>
             <input id="title" type="text" placeholder="Enter your username" required value={usernameText} onChange={(e)=> setUsernameText(e.target.value)}/>

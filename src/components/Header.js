@@ -6,8 +6,7 @@ const Header = (props) => {
          <div className="App-header">
          <button className='sidebar-btn' onClick={props.toggleSidebar}>Sidebar</button>
          <h1>{props.username}'s Chat Room</h1>
-         {/* Prazan div služi za flex pozicioniranje elemenata */}
-         <div></div>
+         <button onClick={props.handleLogout}>Logout</button>
        </div>
        }
        
@@ -15,7 +14,6 @@ const Header = (props) => {
         <div className="App-header">
        <div></div>
         <h1>Chat App</h1>
-        {/* Prazan div služi za flex pozicioniranje elemenata */}
         <div></div>
       </div>
       }

@@ -4,6 +4,8 @@ import Chat from "./components/Chat";
 import Login from "./components/Login";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import About from "./components/About";
+
 
 class App extends React.Component {
 
@@ -21,18 +23,24 @@ class App extends React.Component {
     this.sidebar.ToggleSidebar();
   }
 
+  handleLogout = () => {
+    this.setState({username: ""});
+  }
+
   render() {
     return (
 
 
       <div>
-        <Header toggleSidebar={this.toggleSidebar} username={this.state.username} />
+        <Header toggleSidebar={this.toggleSidebar} username={this.state.username} handleLogout={this.handleLogout} />
         <Sidebar ref={(reference) => this.sidebar = reference} />
 
 
         <Routes>
           <Route path="/" element={this.state.username ? <Chat username={this.state.username} /> : <Navigate to="/login" />} />
           <Route path="/login" element={<Login onLogin={this.handleLogin} />} />
+          <Route path="/about" element={this.state.username ? <About  /> : <Navigate to="/login" />} />
+
         </Routes>
       </div>
     )
