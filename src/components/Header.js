@@ -13,7 +13,7 @@ const Header = (props) => {
        {!isLoggedIn &&
         <div className="App-header">
        <div></div>
-        <h1>Chat App</h1>
+        <h1>Welcome to my Chat app!</h1>
         <div></div>
       </div>
       }
