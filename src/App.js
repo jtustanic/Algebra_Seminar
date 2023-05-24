@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {

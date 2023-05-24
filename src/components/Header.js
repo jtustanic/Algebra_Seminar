@@ -4,7 +4,9 @@ const Header = (props) => {
         <> {/*prazan react fragment, služi istu svrhu kao <div>, ali manje opterećuje DOM*/}
         {isLoggedIn &&
          <div className="App-header">
-         <button onClick={props.toggleSidebar}>Sidebar</button>
+         <button onClick={props.toggleSidebar}>
+          <img src="../images/menu.png" />
+         </button>
          <h1>{props.username}'s Chat Room</h1>
          <button onClick={props.handleLogout}>Logout</button>
        </div>

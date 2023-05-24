@@ -72,14 +72,14 @@
   }
 
   .currentMember > .Message-content .text {
-    background-color: orangered;
+    background-color: #2a53ad;
   }
 
   .message-input {
     padding: 5px;
     font-size: 16px;
     border-radius: 8px 0px 0px 8px;
-    border: 3px solid orangered;
+    border: 3px solid #2a53ad;
     flex-grow: 1;
   }
 
@@ -100,7 +100,7 @@
     padding: 5px;
     font-size: 16px;
     border-radius: 8px;
-    border: 3px solid orangered;
+    border: 3px solid #2a53ad;
     flex-grow: 1;
   }
 
@@ -111,7 +111,7 @@
   button {
     padding: 5px 10px;
     font-size: 16px;
-    background-color: orangered;
+    background-color: #2a53ad;
     color: white;
     border: none;
     border-radius: 8px;
