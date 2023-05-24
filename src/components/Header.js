@@ -5,9 +5,9 @@ const Header = (props) => {
         {isLoggedIn &&
          <div className="App-header">
          <button onClick={props.toggleSidebar}>
-          <img src="../images/menu.png" />
+          MENU
          </button>
-         <h1>{props.username}'s Chat Room</h1>
+         <h1>{props.username}'s chat room</h1>
          <button onClick={props.handleLogout}>Logout</button>
        </div>
        }
@@ -15,7 +15,7 @@ const Header = (props) => {
        {!isLoggedIn &&
         <div className="App-header">
        <div></div>
-        <h1>Welcome to my Chat app!</h1>
+        <h1>Hi there!</h1>
         <div></div>
       </div>
       }

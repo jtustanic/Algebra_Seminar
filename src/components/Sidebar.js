@@ -26,12 +26,12 @@ class Sidebar extends Component {
           <div className="container-fluid mt-3">
               <div className={`sidebar ${isOpen === true ? "active" : ""}`}>
                   <div className="sd-header">
-                      <h4>Sidebar Header</h4>
+                      <h4>W e l c o m e</h4>
                       <div
                           className="btn btn-primary"
                           onClick={this.toggleSidebar}
                       >
-                          Close Sidebar
+                          X
                       </div>
                   </div>
                   <div className="sd-body">
